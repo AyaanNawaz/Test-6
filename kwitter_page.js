@@ -36,7 +36,7 @@ message=message_data["message"];
 like=message_data["like"];
 name_with_tag="<h4 style='font-family:Arial'>"+ name +"<img class='user_tick' src='tick.png'></h4>";
 message_with_tag="<h4 class='message_h4' style='font-family:Times New Roman'>" + message + "</h4>";
-like_button="<button style='word-spacing: -8px; font-family:serif;' class='btn btn-warning' id="+ firebase_message_id + " value=" +like +" onclick='updateLike(this.id)'>";
+like_button="<button style='word-spacing: -12px; font-family:serif;' class='btn btn-warning' id="+ firebase_message_id + " value=" +like +" onclick='updateLike(this.id)'>";
 span_with_tag="<span class='glyphicon glyphicon-thumbs-up'> Likes For This Message: "+ like +"</span></button><hr>";
 row=name_with_tag+message_with_tag+like_button+span_with_tag;
 document.getElementById("output").innerHTML+=row;
